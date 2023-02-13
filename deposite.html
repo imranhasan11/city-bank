@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Deposite Money</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Let's get some <span class="text-blue-700">Money</span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto  mt-12">
+                <div class="bg-green-400 p-8 rounded-lg text-white"><h4 id="" class="text-2xl"> Deposit</h2> 
+                    <h2 class="text-4xl">$<span id="total-diposit">00</span></h2></div>
+                
+                <div class="bg-amber-400 p-8 rounded-lg text-white"><h4  class="text-2xl"> Withdraw</h2> 
+                    <h2 class="text-4xl">$<span id="user-withdraw">00</span></h2></div>
+                <div class="bg-fuchsia-400 p-8 rounded-lg text-white"><h4  class="text-2xl">Balance</h2> 
+                    <h2 class="text-4xl">$<span id="user-balance">00</span></h2></div>
+               </div>
+               <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto  mt-12">
+                <div class="bg-pink-400 p-8 rounded-lg "><h4 class="text-2xl text-white">Please Deposit</h2> 
+                     <input class="block w-9/12 p-1 mt-2" type="text" id="amount-deposit" placeholder="$ Amount you want to Deposit">
+                     <button id="btn-deposit" class="bg-yellow-500  text-white hover:bg-yellow-300 p-2 w-3/12 mt-1 rounded-lg">Deposit</button>
+                </div>
+                <div class="bg-teal-400 p-8 rounded-lg"><h4 class="text-2xl text-white">Please Withdraw</h2> 
+                    <input class="block w-9/12 p-1 mt-2" type="text" id="amount-withdraw" placeholder="$ Amount you want to withdraw">
+                    <button id ='btn-withdraw'class="bg-amber-900 hover:bg-amber-300 text-white p-2 w-3/12 mt-1 rounded-lg">Withdraw</button>
+        </section>
+    </main>
+    <script src="js/submit.js"></script>
+</body>
+</html>
